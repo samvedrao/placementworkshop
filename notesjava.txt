@@ -1,0 +1,18 @@
+| Data Type | Size (bits) | Example             | Default Value             |
+| --------- | ----------- | ------------------- | ------------------------- |
+| `byte`    | 8           | `byte b = 10;`      | `0`                       |
+| `short`   | 16          | `short s = 100;`    | `0`                       |
+| `int`     | 32          | `int x = 1000;`     | `0`                       |
+| `long`    | 64          | `long l = 10000L;`  | `0L`                      |
+| `float`   | 32          | `float f = 10.5f;`  | `0.0f`                    |
+| `double`  | 64          | `double d = 99.99;` | `0.0d`                    |
+| `char`    | 16          | `char c = 'A';`     | `\u0000` (null character) |
+| `boolean` | 1 (logical) | `boolean b = true;` | `false`                   |
+
+
+
+| Type               | Where declared                            | Scope                                    | Default Value                    |
+| ------------------ | ----------------------------------------- | ---------------------------------------- | -------------------------------- |
+| **Local**          | Inside a method or block                  | Only within that method/block            | ❌ Must be initialized before use |
+| **Instance**       | Inside a class but **outside** any method | Exists with object (non-static)          | ✔️ Depends on data type          |
+| **Static (Class)** | Inside a class with `static` keyword      | Shared across all instances of the class | ✔️ Depends on data type          |
